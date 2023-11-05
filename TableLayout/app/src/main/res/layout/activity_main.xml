@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextVersion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Android Version" />
+
+    <EditText
+        android:id="@+id/editTextCodeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Enter android Code Name" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="380dp"
+        android:layout_height="36dp"
+        android:background="@color/gray"
+        android:text="Add" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+
+        android:background="?android:attr/listDivider"
+        android:visibility="invisible" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- Header Row -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="11dp"
+            android:background="@drawable/cell_background">
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>
