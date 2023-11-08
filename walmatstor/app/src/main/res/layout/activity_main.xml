@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:padding="10dp"
+        tools:context=".LoginActivity">
+
+        <ImageView
+            android:id="@+id/walmartLogo"
+            android:layout_width="158dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:src="@drawable/walmart" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@drawable/edit_text"
+
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign in to your account"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email address"
+                android:padding="10dp"
+                android:gravity="start"/>
+
+            <!-- Username EditText -->
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/edit_text"/>
+
+            <!-- Password Hint -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:padding="5dp"
+                android:gravity="start"/>
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/edit_text"/>
+            <TextView
+                android:id="@+id/forgotPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forgot password?"
+                android:autoLink="all"
+                android:clickable="true"
+                android:padding="10dp"
+                android:gravity="end"
+                android:onClick="onForgotPasswordClick" />
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign In"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                 />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="#000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Don't have an account"
+                    android:gravity="center"
+                    android:textColor="#000" />
+
+                <View
+                    android:layout_width="120dp"
+
+                    android:layout_height="1dp"
+                    android:background="#000"
+                    android:layout_marginStart="1dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create a new account"
+
+                app:backgroundTint="@null"
+                android:layout_marginTop="16dp"
+
+                android:background="@drawable/button_outline"
+                android:textColor="#007AFF"
+                android:gravity="center"
+                android:onClick="goToSignUpActivity"
+
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
